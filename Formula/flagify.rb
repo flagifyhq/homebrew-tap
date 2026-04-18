@@ -5,21 +5,21 @@
 class Flagify < Formula
   desc "Flagify CLI — manage feature flags from the terminal"
   homepage "https://flagify.dev"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flagifyhq/cli/releases/download/v1.3.0/flagify_darwin_amd64.tar.gz"
-      sha256 "e5820185bbf64c762c37be0b8e36b9c0fae1e2b0ba20cfbaf281c16067263f0c"
+      url "https://github.com/flagifyhq/cli/releases/download/v1.4.0/flagify_darwin_amd64.tar.gz"
+      sha256 "8fe0a9332ae2654ab91d49da0a4d4175a257b238f2562f4ef4a3930c32bbfeda"
 
       define_method(:install) do
         bin.install "flagify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/flagifyhq/cli/releases/download/v1.3.0/flagify_darwin_arm64.tar.gz"
-      sha256 "ca2c0d0e2fe45648b264bbd48bb86cdbe4885f5fbeadd85c53f1ddbc698fd254"
+      url "https://github.com/flagifyhq/cli/releases/download/v1.4.0/flagify_darwin_arm64.tar.gz"
+      sha256 "cc2bb8b9cf1e5e8a66257a243994b14d168e2a86879d85106834cc052051fb35"
 
       define_method(:install) do
         bin.install "flagify"
@@ -29,15 +29,15 @@ class Flagify < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flagifyhq/cli/releases/download/v1.3.0/flagify_linux_amd64.tar.gz"
-      sha256 "869349ff0262d411e474d94968046c1527f6bdaf951565105af42f25d1b23aee"
+      url "https://github.com/flagifyhq/cli/releases/download/v1.4.0/flagify_linux_amd64.tar.gz"
+      sha256 "9f93331b89f72eb173010758d9055a3acabaaadbd104bcfad12d07e670edd4e6"
       define_method(:install) do
         bin.install "flagify"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flagifyhq/cli/releases/download/v1.3.0/flagify_linux_arm64.tar.gz"
-      sha256 "c1829df205e2e9427ccfc43c67892823920944e7064b1f2c4ea960ef154cd3ff"
+      url "https://github.com/flagifyhq/cli/releases/download/v1.4.0/flagify_linux_arm64.tar.gz"
+      sha256 "a6d666c87ab8134121a83feb71cf0e46a31075bd6507a575101dee0a90679612"
       define_method(:install) do
         bin.install "flagify"
       end
